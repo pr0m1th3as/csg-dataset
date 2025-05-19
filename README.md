@@ -1,5 +1,5 @@
 # csg-dataset
-## A dataset of diaphyseal cross sectional geometric properties of long bones.
+## A large dataset of diaphyseal cross sectional geometric properties and relevant measurements from human long bones.
 
 The present GNU Octave package contains the largest (to date) public dataset of diaphyseal CSG properties of human long bones. The dataset is split between two files, `cross-sections.mat` and `csg-properties.mat`, each containing a $2 \times 24$ cell array saved in Octave's native binary format. Both files become available into the load path once the **csg-dataset** package has been loaded and they can be separately loaded into Octave's workspace with the `load` command.
 
@@ -7,7 +7,7 @@ The present GNU Octave package contains the largest (to date) public dataset of 
 
 Both cell arrays stored in `cross-sections.mat` and `csg-properties.mat` follow the same layout. The samples are grouped per skeletal collection (Athens, Crete, Granada), per bone (Femur, Humerus, Tibia, Ulna), and per side (Left, Right), with each column corresponding to a distinct group. The first row contains each group's description tag (e.g. `'Athens Femur Left'`) and the second row contains the corresponding data, which for CSG properties are stored in cell arrays and for cross sections are stored in structure arrays. Each sample's ID (based on the 3D model filename), sex, and age-at-death info is stored in both cell arrays making `cross-sections.mat` and `csg-properties.mat` data files completely independent and self-documented.
 
-The data in `csg-properties.mat` can be regrouped into four numerical arrays (variables named **`Femur`**, **`Humerus`**, **`Tibia`**, and **`Ulna`**) by aggregating collections and sides into a single group for each long bone with the accompanying `longbone_SampleStats` script, which is part of the **csg-dataset** package. The `longbone_SampleStats` script automatically saves the aforementioned numerical arrays into a new binary data file, named `Bone-Data.mat`, as well as it calculates the dataset sample statistics presented below. 
+The data in `csg-properties.mat` can be regrouped into four numerical arrays (variables named **`Femur`**, **`Humerus`**, **`Tibia`**, and **`Ulna`**) by aggregating collections and sides into a single group for each long bone with the accompanying `longbone_SampleStats` script, which is part of the **csg-dataset** package. The `longbone_SampleStats` script automatically saves the aforementioned numerical arrays into a new binary data file, named `Bone-Data.mat`, as well as it calculates the dataset sample statistics presented below.
 
 * The dataset of long bone diaphyseal cross sectional geometric properties contained and distributed as the **csg-dataset** package is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license. [(CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 * The `longbone_SampleStats` script is licensed under the GNU General Public License version 3. [(GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
@@ -95,4 +95,4 @@ The following table summarizes the minimum, median, and maximum age-at-death of 
 
 I would like to express my gratitude to Professor *Efstratios Valakos* (Athens), Assistant Professor *Elena Kranioti* (Crete), and Professor *María Inmaculada Alemán Aguilera* (Granada) for granting me access to the respective skeletal collections in order to create the long bone digital twins from which the present dataset was derived.
 
-The **csg-dataset** package for the GNU Octave programming language is part of the research output of my [RECONSTRUCT](https://www.physicalanthropology.gr/reconstruct.php) project, which has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie Grant agreement No 101104702. 
+The **csg-dataset** package for the GNU Octave programming language is part of the research output of my [RECONSTRUCT](https://www.physicalanthropology.gr/reconstruct.php) project, which has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie Grant agreement No 101104702.

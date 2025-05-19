@@ -3,8 +3,8 @@ Version: 1.0.0
 Date: 2025-05-19
 Author: Andreas Bertsatos
 Maintainer: Andreas Bertsatos <abertsatos@biol.uoa.gr>
-Title: CSG Data Set
-Description: A large data set of diaphyseal cross sectional geometric properties
+Title: CSG dataset
+Description: A large dataset of diaphyseal cross sectional geometric properties
  and relevant measurements from human long bones.
 Categories: mesh3D
 Depends: octave(>= 6.1.0)
