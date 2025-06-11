@@ -9,7 +9,7 @@ Both cell arrays stored in `cross-sections.mat` and `csg-properties.mat` follow 
 
 The data in `csg-properties.mat` can be regrouped into four numerical arrays (variables named **`Femur`**, **`Humerus`**, **`Tibia`**, and **`Ulna`**) by aggregating collections and sides into a single group for each long bone with the accompanying `longbone_SampleStats` script, which is part of the **csg-dataset** package. The `longbone_SampleStats` script automatically saves the aforementioned numerical arrays into a new binary data file, named `Bone-Data.mat`, as well as it calculates the dataset sample statistics presented below.
 
-* The dataset of long bone diaphyseal cross sectional geometric properties contained and distributed as the **csg-dataset** package is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license. [(CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+* The dataset of long bone diaphyseal cross sectional geometric properties contained and distributed as the **csg-dataset** package is licensed under the Creative Commons Attribution 4.0 International license. [(CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 * The `longbone_SampleStats` script is licensed under the GNU General Public License version 3. [(GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## Installation and dependencies
